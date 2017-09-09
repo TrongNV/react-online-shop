@@ -12,12 +12,12 @@ var Header = React.createClass({
 						<div className="header__logo">HEADER</div>
 						
 							<ul className="header-nav">
-								<li><a href="">MAIN</a></li>
-								<li><a href="">MENU</a></li>
-								<li><a href="">ABOUT</a></li>
+							
+								<li><a className="header-nav__link" href="">MENU</a></li>
+								<li><a className="header-nav__link" href="">ABOUT</a></li>
 								<li className="cart">
 									<a className="cartt" href="">
-									
+
 										<span className="lnr lnr-cart"></span>
 										<span className="cart__text">($ 34 )</span> 
 									</a>

@@ -38,19 +38,37 @@ align-items:center;
 				padding: 20px 40px;
 				display: block;
 				color: $pink;
+				transition:.3s;
+				border-bottom: 3px solid transparent;
 				&:hover{
-					//background: grey;
-					text-decoration: none;
+					//color: #ececec;
+					//text-decoration: none;
+					//border-bottom: 3px solid $pink;
 				}
 			}
+			.header-nav__link{
+
+				
+			}
+			.header-nav__link:hover{
+					//color: #ececec;
+					text-decoration: none;
+					border-bottom: 3px solid $pink;
+				}
 		}
 		.cart{
 			border-radius: 10px;
 			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 			background: $pink;
-			a{color: #fff;}
+
+			a{
+				color: #fff;
+				font-weight: 100;
+				border: none;
+			}
 			transition:.3s;
 			&:hover{
+				border: none;
 				box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 			}
 		}
