@@ -1,6 +1,6 @@
 $pink:#E08283;
 .container{
-	//outline: 2px solid red;
+	//\outline: 2px solid red;
 
 }
 
@@ -8,12 +8,10 @@ $pink:#E08283;
 	background: #fff;
 	border-radius: 10px;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-	//box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 	transition:.3s;
 	margin-bottom:35px;
 	overflow: hidden;
 	&__title{
-		//background: red;
 		text-align: center;
 		padding-bottom: 15px ;
 		h2{
@@ -27,21 +25,16 @@ $pink:#E08283;
 		width: 100%;
 		}
 		&::after{
-			//border-radius: 10px 10px 0 0;
 			border-radius: 100%;
 			transition:.3s;
 			background:rgba(41,45,56,0.8);
 			position: absolute;
-			// height: 100%;
-			// width: 100%;
 			height: 10px;
 			width: 10px;
 			display: block;
-			//top:0;
 			right: -5%;
 			bottom: -5%;
 			content:"";
-			//transform:scale(0);
 		}
 	}
 	
@@ -67,37 +60,6 @@ $pink:#E08283;
 
 }
 
-.article:hover{
-	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-	.article__photo{
-		overflow: hidden;
-	}
-	.article__photo::after{
-			background:rgba(41,45,56,0.8);
-			transform:scale(25, 25);
-		}
-		.lnr-cart{
-			transform: translateX(-0px);
-
-		}
-		.lnr-arrow-right-circle{
-			transform: translateX(-0px);
-			font-size: 50px;
-			opacity: 1;
-
-		}
-		.card-button__text{
-			transform: translateX(200%);
-	 		
-		}
-		.card-button_white{
-			display: block;
-			opacity: 1;
-			text-decoration: none;
-			color: #fff;
-			box-shadow:0 0;
-		}
-}
 
 	
 
@@ -122,15 +84,11 @@ $pink:#E08283;
 	 		transition:.3s;
 	 		position: relative;
 	 		display: inline-block;
-			//text-align: right;
 			.lnr-cart{
 
 			 	font-size: 22px;
 			 	
 			 	display: inline-block;
-			 	//background: red;
-			 	//width: 100%;
-			 	//transform: translateY(3px);
 			 	transform: translateX(-100%);
 			 	left: 0;
 			 	right: 0;
@@ -158,12 +116,7 @@ $pink:#E08283;
 .card-button_white{
 	background: transparent;
 	margin-right: 10px;
-	//margin-bottom: 10px;
-	//border: 2px solid #fff;
-	//background: #fff;
 	color: #fff;
-	//display: none;
-	//opacity: 0;
 	box-shadow:0 0;
 	transition:.3s;
 	text-decoration: none;
@@ -173,11 +126,55 @@ $pink:#E08283;
 			bottom: 0;
 			right: 0;
 			transition:.3s;
+			
 			.lnr-arrow-right-circle{
 				transition:.3s;
 				font-size: 0px;
 				opacity: 0;
-
+				
 			}
-			//transform: scale(1.5);
+}
+
+.card-button_white:hover{
+	.lnr-arrow-right-circle{
+				color:$pink;
+				
+			}
+	
+}
+
+.article:hover{
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	.article__photo{
+		overflow: hidden;
+	}
+	.article__more{
+		color:red;
+	}
+	.article__photo::after{
+			background:rgba(41,45,56,0.8);
+			transform:scale(25, 25);
+		}
+		.lnr-cart{
+			transform: translateX(-0px);
+
+		}
+		.lnr-arrow-right-circle{
+			transform: translateX(-0px);
+			font-size: 50px;
+			opacity: 1;
+
+
+		}
+		.card-button__text{
+			transform: translateX(200%);
+	 		
+		}
+		.card-button_white{
+			display: block;
+			opacity: 1;
+			text-decoration: none;
+			color: #fff;
+			box-shadow:0 0;
+		}
 }

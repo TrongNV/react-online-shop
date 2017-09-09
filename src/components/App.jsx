@@ -1,15 +1,21 @@
 import React from 'react';
-import Grid from './Grid.jsx'
-import './App.scss'
+import Header from './Header.jsx';
+import Grid from './Grid.jsx';
+import './App.scss';
 
 var App = React.createClass({
 
 	render: function() {
 		return (
-			<Grid>
-				
+			<div className="app">
+				<Header>
+					
+				</Header>
+				<Grid>
+					
 
-			</Grid>
+				</Grid>
+			</div>
 		);
 	}
 
