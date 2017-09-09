@@ -5,7 +5,11 @@ var App = React.createClass({
 
 	render: function() {
 		return (
-			<h1>qwerty</h1>
+			<header>
+				<h1>Header</h1>
+				
+			</header>
+			
 		);
 	}
 

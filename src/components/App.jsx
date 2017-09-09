@@ -1,13 +1,18 @@
 import React from 'react';
+import Grid from './Grid.jsx'
+import './App.scss'
 
-const App = React.createClass({
-    render() {
-        return (
-            <div className='App'>
-               ghjgj
-            </div>
-        );
-    }
+var App = React.createClass({
+
+	render: function() {
+		return (
+			<Grid>
+				
+
+			</Grid>
+		);
+	}
+
 });
 
 export default App;
