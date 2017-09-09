@@ -3,7 +3,7 @@ import Product from './Product.jsx';
 import products from './data.json';
 
 
-var Grid = React.createClass({
+var Products = React.createClass({
 
 componentDidMount(){
 var grid = this.refs.grid;
@@ -21,25 +21,18 @@ var grid = this.refs.grid;
 
     },
 	render: function() {
+		
 		return (
-			<main>
-				<div className="container" >
-				<div className="row products_wrap" ref="grid">
+			
+					<div className="products_wrap" ref="grid">
+						{
+							products.map(function(prd) {
+							  return (<Product key={prd.id} image={prd.image}></Product>)
+							})
 
-					{
-						products.map(function(prd) {
-						  return (<Product key={prd.id} image={prd.image}></Product>)
-						})
-
-					}
-
-				</div>
+						}
+					</div>
 				
-						
-						
-						
-				</div>
-			</main>
 			
 			
 			);
@@ -47,9 +40,9 @@ var grid = this.refs.grid;
 
 });
 
-export default Grid;
+export default Products;
 
-//<span className="lnr lnr-cart"></span>
+
 
 
 

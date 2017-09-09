@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header.jsx';
-import Grid from './Grid.jsx';
+import Content from './Content.jsx';
 import './App.scss';
 
 var App = React.createClass({
@@ -11,10 +11,10 @@ var App = React.createClass({
 				<Header>
 					
 				</Header>
-				<Grid>
+				<Content>
 					
 
-				</Grid>
+				</Content>
 			</div>
 		);
 	}
