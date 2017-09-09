@@ -12,12 +12,12 @@ module.exports = {
         loaders: [
             {
                 test: /\.js$/,
-                loader: "babel",
+                loader: "babel-loader",
                 exclude: [/node_modules/, /public/]
             },
             {
                 test: /\.jsx$/,
-                loader: "react-hot!babel",
+                loader: "react-hot-loader!babel-loader",
                 exclude: [/node_modules/, /public/]
             },
             {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Products from './Products.jsx';
+
 
 var Content = React.createClass({
 
@@ -10,7 +10,7 @@ var Content = React.createClass({
 			<main>
 				<div className="container" >
 					<div className="row" >
-						<Products></Products>
+						{this.props.children}
 					</div>
 				</div>
 			</main>
