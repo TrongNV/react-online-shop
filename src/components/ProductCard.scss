@@ -13,9 +13,12 @@ $pink:#E08283;
 	overflow: hidden;
 	&__title{
 		text-align: center;
-		padding-bottom: 15px ;
+		
+		padding: 10px;
 		h2{
-			font-size: 24px;
+			font-size: 18px;
+			font-weight: 100;
+			//text-transform: uppercase;
 		}
 	}
 	&__photo{

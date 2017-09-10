@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 import './Header.scss';
 
 
@@ -12,9 +13,9 @@ var Header = React.createClass({
 						<div className="header__logo">HEADER</div>
 						
 							<ul className="header-nav">
-							
-								<li><a className="header-nav__link" href="">MENU</a></li>
-								<li><a className="header-nav__link" href="">ABOUT</a></li>
+								<li><NavLink exact className="header-nav__link" to="/">MAIN</NavLink></li>
+								<li><NavLink className="header-nav__link" to="/products">PRODUCTS</NavLink></li>
+								<li><NavLink className="header-nav__link" to="/about">ABOUT</NavLink></li>
 								<li className="cart">
 									<a className="cartt" href="">
 

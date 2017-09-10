@@ -1,6 +1,7 @@
 import React from 'react';
-import Product from './Product.jsx';
-import products from './data.json';
+
+import ProductCard from './../components/ProductCard.jsx';
+import products from './../data.json';
 
 
 var Products = React.createClass({
@@ -27,7 +28,7 @@ var grid = this.refs.grid;
 					<div className="products_wrap" ref="grid">
 						{
 							products.map(function(prd) {
-							  return (<Product key={prd.id} image={prd.image}></Product>)
+							  return (<ProductCard key={prd.id} product={prd}></ProductCard>)
 							})
 
 						}
