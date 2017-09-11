@@ -23,12 +23,12 @@ var App = React.createClass({
 					</Header>
 					<Content>
 						<Switch>
-								<Route exact path="/" component={Product} />
-							 <Route exact path="/" component={Home} />
-							 <Route exact path="/products" component={Products} />
-							 <Route path="/products/product/:id" component={Product} />
-							 <Route path="/about" component={About}  />
-							 <Route  component={NotFound}  />
+							
+							<Route exact path="/" component={Home} />
+							<Route exact path="/products" component={Products} />
+							<Route path="/products/product/:id" component={Product} />
+							<Route path="/about" component={About}  />
+							<Route  component={NotFound}  />
 						 </Switch>
 					</Content>
 				</div>
