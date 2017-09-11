@@ -13,22 +13,30 @@ import NotFound from './pages/NotFound.jsx';
 import './App.scss';
 
 var App = React.createClass({
+	getInitialState: function() {
+		return {
+			ttlPrc:0 
+		};
+	},
+	handleBuy(price){
+		console.log(price);
+		this.setState({
+			ttlPrc: this.state.ttlPrc+price
+		});
 
-	handleBuy(){
-		console.log("BUY")
 	},
 	render: function() {
 		return (
 			<Router>
 				<div className="app">
-					<Header>
+					<Header total={this.state.ttlPrc}>
 						
 					</Header>
 					<Content>
 						<Switch>
 							
 							<Route exact path="/" component={Home} />
-							<Route exact path="/products" component={Products} />
+							<Route exact path="/products" render={props=><Products OnHandleBuy={this.handleBuy}/> } />
 							<Route path="/products/product/:id" component={Product} />
 							<Route path="/about" component={About}  />
 							<Route  component={NotFound}  />

@@ -24,7 +24,7 @@ var ProductCard = React.createClass({
 						<h2>{this.props.product.name}</h2>
 					</div>
 					<div className="article__button">
-						<button className="card-button">
+						<button className="card-button" onClick={this.props.OnClickBuy.bind(null,this.props.product.price)}>
 							<span className="lnr lnr-cart"></span>
 							<span className="card-button__text">$ {this.props.product.price}</span>
 						</button>

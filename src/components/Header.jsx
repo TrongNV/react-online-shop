@@ -17,7 +17,7 @@ var Header = React.createClass({
 								<li><NavLink exact className="header-nav__link" to="/">MAIN</NavLink></li>
 								<li><NavLink className="header-nav__link" to="/products">PRODUCTS</NavLink></li>
 								<li><NavLink className="header-nav__link" to="/about">ABOUT</NavLink></li>
-								<Cart></Cart>
+								<Cart total={this.props.total}></Cart>
 							</ul>
 					</div>
 				</div>

@@ -25,11 +25,13 @@ var grid = this.refs.grid;
 		
 		return (
 			
-					<div className="products_wrap" ref="grid">
+					<div className="products_wrap" ref="grid" >
 						{
-							products.map(function(prd) {
-							  return (<ProductCard key={prd.id} product={prd}></ProductCard>)
-							})
+							products.map(prd=> (<ProductCard 
+												key={prd.id}
+							  					product={prd}
+							  					OnClickBuy={this.props.OnHandleBuy}></ProductCard>)
+							)
 
 						}
 					</div>
