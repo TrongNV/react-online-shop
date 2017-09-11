@@ -1,4 +1,7 @@
 $pink:#E08283;
+.container{
+	//outline: 1px solid blue;
+}
 header{
 	background: #fff;
 	height: 100px;
@@ -10,6 +13,7 @@ header{
 	
 	display: flex;
 	align-items:center;
+	flex-wrap:wrap;
 	&__logo{
 		flex-grow:2;
 	}
@@ -24,6 +28,7 @@ header{
 		list-style: none;
 		flex-grow:1;
 		display: flex;
+		flex-wrap:wrap;
 		justify-content:flex-end;
 
 		li{
@@ -53,3 +58,7 @@ header{
 		
 	}
 
+
+.relat{
+	position: relative;
+}

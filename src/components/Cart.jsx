@@ -4,18 +4,20 @@ import './Cart.scss';
 
 
 var Cart = React.createClass({
-	getInitialState: function() {
-		return {
-			totalPrice:0 
-		};
-	},
+	
 	
 	render: function() {
 		return (
-			<a className="cart" href="123">
-				<span className="lnr lnr-cart"></span>
-				<span className="cart__text">($ {this.props.total} )</span> 
-			</a>
+
+		
+				<button className="cart" href="" onClick={this.props.showCartClick}>
+					<span className="lnr lnr-cart"></span>
+					<span className="cart__text">($ {this.props.total} )</span> 
+				</button>
+				
+
+
+		
 		);
 	}
 

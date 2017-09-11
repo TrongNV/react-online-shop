@@ -15,13 +15,17 @@ import './App.scss';
 var App = React.createClass({
 	getInitialState: function() {
 		return {
+			productsInCart:[],
 			ttlPrc:0 
 		};
 	},
-	handleBuy(price){
-		console.log(price);
+	handleBuy(product){
+		console.log(product);
+		var newProductsInCart = this.state.productsInCart.slice();
+        newProductsInCart.unshift(product);
 		this.setState({
-			ttlPrc: this.state.ttlPrc+price
+			productsInCart:newProductsInCart,
+			ttlPrc: this.state.ttlPrc+product.price
 		});
 
 	},
@@ -29,7 +33,9 @@ var App = React.createClass({
 		return (
 			<Router>
 				<div className="app">
-					<Header total={this.state.ttlPrc}>
+					<Header 
+					productsInCart={this.state.productsInCart}
+					total={this.state.ttlPrc}>
 						
 					</Header>
 					<Content>
