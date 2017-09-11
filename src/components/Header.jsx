@@ -1,5 +1,6 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
+import Cart from './Cart.jsx';
 import './Header.scss';
 
 
@@ -16,13 +17,7 @@ var Header = React.createClass({
 								<li><NavLink exact className="header-nav__link" to="/">MAIN</NavLink></li>
 								<li><NavLink className="header-nav__link" to="/products">PRODUCTS</NavLink></li>
 								<li><NavLink className="header-nav__link" to="/about">ABOUT</NavLink></li>
-								<li className="cart">
-									<a className="cartt" href="">
-
-										<span className="lnr lnr-cart"></span>
-										<span className="cart__text">($ 34 )</span> 
-									</a>
-								</li>
+								<Cart></Cart>
 							</ul>
 					</div>
 				</div>

@@ -1,0 +1,42 @@
+	$pink:#E08283;
+	.cart{
+		text-decoration: none;
+		border-radius: 10px;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		background: $pink;
+		font-weight: 700;
+		padding: 20px 40px;
+		display: block;
+		color: $pink;
+		transition:.3s;
+		border-bottom: 3px solid transparent;
+		color: #fff;
+		font-weight: 100;
+		border: none;
+		outline: none;
+		transition:.3s;
+		&:hover{
+			color: #fff;
+			border: none;
+			box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+		}
+		&:active{
+			color: #fff;
+			border: none;
+			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		}
+		.lnr-cart{
+			display: inline-block;
+			transform:scale(2.5);
+			align-self:center;
+		}
+		.cart__text{
+			display: inline-block;
+			margin-left: 30px;
+			transform:scale(1.5);
+		}
+
+
+
+	}
+	

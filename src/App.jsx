@@ -14,6 +14,9 @@ import './App.scss';
 
 var App = React.createClass({
 
+	handleBuy(){
+		console.log("BUY")
+	},
 	render: function() {
 		return (
 			<Router>
