@@ -5,14 +5,14 @@
 	"image":"1.jpg",
 	"price": 24,
 	"name": "Mozzarella",
-	"about":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo rerum est eius aliquid, quasi laudantium doloremque aliquam quas quam voluptatibus, tempore ratione dolorum molestias cum inventore laborum nesciunt vero! Nisi!"
+	"about":"Chicken Meatball, Chicken Pepperoni, Chicken Sausage, Chicken Keema"
 },
 {
 	"id":2,
 	"image":"2.jpg",
 	"price": 14,
 	"name": "London Sandwich",
-	"about":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo rerum est eius aliquid, quasi laudantium doloremque aliquam quas quam voluptatibus, tempore ratione dolorum molestias cum inventore laborum nesciunt vero! Nisi!"
+	"about":"Chicken fillet / Parmesan cheese / Mozzarella cheese / fresh tomato / salad mix / spicy sauce based on mayonnaise"
 
 },
 
@@ -21,7 +21,7 @@
 	"image":"3.jpg",
 	"price": 24,
 	"name": "Block burger",
-	"about":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo rerum est eius aliquid, quasi laudantium doloremque aliquam quas quam voluptatibus, tempore ratione dolorum molestias cum inventore laborum nesciunt vero! Nisi!"
+	"about":"Marinated veal grilled, fresh tomato, Mediterranean onion, salad mix, BBQ sauce"
 
 },
 
@@ -30,7 +30,7 @@
 	"image":"4.jpg",
 	"price": 23.5,
 	"name": "Duck with apples",
-	"about":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo rerum est eius aliquid, quasi laudantium doloremque aliquam quas quam voluptatibus, tempore ratione dolorum molestias cum inventore laborum nesciunt vero! Nisi!"
+	"about":"Chicken Keema, Chicken Hot & Chilly, Onion, Tomato"
 
 },
 
@@ -39,7 +39,7 @@
 	"image":"5.jpg",
 	"price": 20,
 	"name": "Atomic burger",
-	"about":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo rerum est eius aliquid, quasi laudantium doloremque aliquam quas quam voluptatibus, tempore ratione dolorum molestias cum inventore laborum nesciunt vero! Nisi!"
+	"about":"Double juicy burger from beef, fresh tomato, pickled cucumber, salad mix, cheese. Served with French fries, onion sauté"
 
 },
 
@@ -48,7 +48,7 @@
 	"image":"6.jpg",
 	"price": 18.5,
 	"name": "Salad",
-	"about":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo rerum est eius aliquid, quasi laudantium doloremque aliquam quas quam voluptatibus, tempore ratione dolorum molestias cum inventore laborum nesciunt vero! Nisi!"
+	"about":"Chicken Keema, Chicken Hot & Chilly, Onion, Tomato"
 
 },
 
@@ -57,7 +57,7 @@
 	"image":"7.jpg",
 	"price": 18.5,
 	"name": "Smoozie",
-	"about":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo rerum est eius aliquid, quasi laudantium doloremque aliquam quas quam voluptatibus, tempore ratione dolorum molestias cum inventore laborum nesciunt vero! Nisi!"
+	"about":"Chocolate biscuit, ice cream"
 
 },
 {
@@ -65,7 +65,7 @@
 	"image":"8.jpg",
 	"price": 15,
 	"name": "Moxito",
-	"about":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo rerum est eius aliquid, quasi laudantium doloremque aliquam quas quam voluptatibus, tempore ratione dolorum molestias cum inventore laborum nesciunt vero! Nisi!"
+	"about":"Lime, ice, sprite"
 
 },
 
@@ -74,7 +74,7 @@
 	"image":"3.jpg",
 	"price": 23,
 	"name": "Dart Veider's burger",
-	"about":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo rerum est eius aliquid, quasi laudantium doloremque aliquam quas quam voluptatibus, tempore ratione dolorum molestias cum inventore laborum nesciunt vero! Nisi!"
+	"about":"Pork-beef burger, fresh tomato, pickled cucumber, salad mix, cheese. Served with French fries, sauteed onions and champignons"
 
 }
 

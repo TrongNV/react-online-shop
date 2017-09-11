@@ -26,10 +26,7 @@ var CartTable = React.createClass({
 						     <td className="cartTable__productTD">
 								<img src={`/img/${elem.image}`} alt=""/>
 								{elem.name}
-								{elem.dublicate>1?elem.dublicate:""
-
-
-									}
+								{elem.dublicate>1? ` (x ${elem.dublicate})`:""}
 						     </td>
 						    
 						     <td>$ {elem.price}</td>

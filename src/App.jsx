@@ -105,7 +105,7 @@ if (!dublicate) {
 							
 							<Route exact path="/" component={Home} />
 							<Route exact path="/products" render={props=><Products OnHandleBuy={this.handleBuy}/> } />
-							<Route path="/products/product/:id" component={Product} />
+							<Route path="/products/product/:id" render={props=><Product OnHandleBuy={this.handleBuy} {...props}/> } />
 							<Route path="/about" component={About}  />
 							<Route  component={NotFound}  />
 						 </Switch>
