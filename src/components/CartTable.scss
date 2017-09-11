@@ -18,6 +18,7 @@ $pink:#E08283;
 
    		.lnr{
    			font-size: 24px;
+   			cursor: pointer;
    		}
 		tr{
 			text-align: left;
@@ -36,8 +37,10 @@ $pink:#E08283;
 				font-size: 18px;
 		}
 	}
-	h1{
+	h3{
 		color:$pink;
+		color: grey;
+		font-weight: 100;
 		text-align: center;
 	}
 }

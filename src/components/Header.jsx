@@ -37,7 +37,9 @@ console.log("33");
 
 					</div>
 				<div className="col-lg-offset-5 col-lg-7 col-md-offset-5 col-md-7 col-sm-12 col-xs-12">
-				{this.state.showCart?(<CartTable CartProducts={this.props.productsInCart}></CartTable>):null
+				{this.state.showCart?(<CartTable delProduct={this.props.onHandleDelProductCart}
+
+											 CartProducts={this.props.productsInCart}></CartTable>):null
 				}
 				</div>
 					

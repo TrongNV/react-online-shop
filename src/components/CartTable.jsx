@@ -20,29 +20,33 @@ var CartTable = React.createClass({
 						 </thead>
 						 <tbody>
 						{
-						 	 this.props.CartProducts.map(function(elem) {
-						   return ( 
+						 	 this.props.CartProducts.map(elem=>
+						   ( 
 						   	<tr key={elem.id}>
 						     <td className="cartTable__productTD">
 								<img src={`/img/${elem.image}`} alt=""/>
 								{elem.name}
+								{elem.dublicate>1?elem.dublicate:""
+
+
+									}
 						     </td>
 						    
 						     <td>$ {elem.price}</td>
 						      <td>
-							      <span className="lnr lnr-trash"></span>
+							      <span className="lnr lnr-trash" onClick={this.props.delProduct.bind(null,elem)}></span>
 
 						      </td>
 						  	</tr>
 								  )
-								 })
+								 )
 								}
 						 
 						 
 						  
 						 </tbody>
 					</table>
-			): (<h1>НЕТ ТОВАРОВ</h1>)
+			): (<h3>Корзина пуста</h3>)
 
 						 }
 
