@@ -16,7 +16,7 @@ var ProductCard = React.createClass({
 							</Link>
 							
 						</div>
-						<img src={`/img/${this.props.product.image}`}  alt=""/>
+						<img src={`/react-online-shop/img/${this.props.product.image}`}  alt=""/>
 						
 					</div>
 

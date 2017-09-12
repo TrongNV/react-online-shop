@@ -16,7 +16,7 @@ var curProduct = products.find(product=>product.id==this.props.match.params.id)
 		        <div className="product">
 		        <div className="col-lg-offset-5 col-md-offset-5 col-sm-offset-5 lol col-lg-7  col-md-7 col-sm-7">
 		              <div className="product__image">
-		                <img src={`/img/${curProduct.image}`}  alt=""/>
+		                <img src={`/react-online-shop/img/${curProduct.image}`}  alt=""/>
 		              </div>
 		          </div>
 		            <div className="col-lg-6 col-md-6 col-sm-6 qwe ">
