@@ -5,15 +5,10 @@ import products from './../data.json';
 
 
 var Products = React.createClass({
-// componentDidUpdate: function(prevProps) {
-//         if (this.props.noteText !== prevProps.noteText) {
-//             this.msnry.reloadItems();
-//             this.msnry.layout();
-//         }
-//     },
+
 componentDidMount(){
 var grid = this.refs.grid;
-	imagesLoaded( document.querySelector('.products_wrap'), function( instance ) {
+	imagesLoaded( document.querySelector('.products_wrap'),  instance=> {
 
   	
         this.msnry = new Masonry( grid, {
@@ -25,6 +20,12 @@ var grid = this.refs.grid;
 });
 
 
+    },
+    componentDidUpdate: function(prevProps) {
+        if (this.props.match.params.cat !== prevProps.match.params.cat) {
+            this.msnry.reloadItems();
+            this.msnry.layout();
+        }
     },
 	render: function() {
 
