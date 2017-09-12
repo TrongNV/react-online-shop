@@ -22,12 +22,15 @@ console.log("33");
 		
 	},
 	render: function() {
+		var currentLocation =  window.location.pathname
+		console.log(currentLocation );
 		return (
 			<header >
 				<div className="container relat">
 					<div className="header">
 						<div className="header__logo">
-							<Search onSearch={this.props.handleSearch}></Search>
+						{(currentLocation.includes('/products') && !currentLocation.includes('/products/product'))?(<Search onSearch={this.props.handleSearch}></Search>):null
+						}
 						</div>
 						
 							<ul className="header-nav">

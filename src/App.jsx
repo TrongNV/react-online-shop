@@ -117,6 +117,11 @@ var App = React.createClass({
 
 			</Header>
 
+
+
+
+
+
 			<Content>
 			<Route  exact path="/products/:cat?" render={props=><CategoryComponent categories={this.props.categories} {...props} /> } />
 			<Switch>
