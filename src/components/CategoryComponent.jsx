@@ -1,12 +1,12 @@
 import React from 'react';
 import './CategoryComponent.scss';
-import categories from './../categories.json';
 import {NavLink} from 'react-router-dom';
 
 
 var CategoryComponent = React.createClass({
-
+	
 	render: function() {
+		var categories=this.props.categories;
 		return (
 			<div className="row" >
 				<div className="col-lg-12 col-md-12">

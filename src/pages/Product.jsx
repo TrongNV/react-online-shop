@@ -1,5 +1,4 @@
 import React from 'react';
-import products from './../data.json';
 import './Product.scss'
 
 
@@ -8,6 +7,7 @@ import './Product.scss'
 var Product = React.createClass({
 
 	render: function() {
+		var products=this.props.products;
 var curProduct = products.find(product=>product.id==this.props.match.params.id) 
 		console.log(this.props)
 

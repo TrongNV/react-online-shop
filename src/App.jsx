@@ -3,13 +3,14 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 import Header from './components/Header.jsx';
 import Content from './components/Content.jsx';
+import CategoryComponent from './components/CategoryComponent.jsx'
 
 import About from './pages/About.jsx';
 import Home from './pages/Home.jsx';
 import Products from './pages/Products.jsx';
 import Product from './pages/Product.jsx';
 import NotFound from './pages/NotFound.jsx';
-import CategoryComponent from './components/CategoryComponent.jsx'
+
 import './App.scss';
 
 var App = React.createClass({
@@ -19,6 +20,7 @@ var App = React.createClass({
 			ttlPrc:0 
 		};
 	},
+
 	handleBuy(product){
 		console.log("###########################");
 		console.log(product);
@@ -102,13 +104,13 @@ if (!dublicate) {
 					</Header>
 					
 					<Content>
-					<Route  exact path="/products/:cat?" component={CategoryComponent} />
+					<Route  exact path="/products/:cat?" render={props=><CategoryComponent categories={this.props.categories} {...props} /> } />
 						<Switch>
 							
 							<Route exact path="/" component={Home} />
 							<Route path="/about" component={About}  />
-							<Route exact path="/products/:cat?" render={props=><Products OnHandleBuy={this.handleBuy} {...props}/> } />
-							<Route  path="/products/product/:id"  render={props=><Product OnHandleBuy={this.handleBuy} {...props}/> } />
+							<Route exact path="/products/:cat?" render={props=><Products OnHandleBuy={this.handleBuy} products={this.props.products} {...props}/> } />
+							<Route  path="/products/product/:id"  render={props=><Product OnHandleBuy={this.handleBuy} products={this.props.products} {...props}/> } />
 							
 							
 							<Route  component={NotFound}  />

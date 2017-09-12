@@ -1,7 +1,7 @@
 import React from 'react';
 
 import ProductCard from './../components/ProductCard.jsx';
-import products from './../data.json';
+
 
 
 var Products = React.createClass({
@@ -28,7 +28,7 @@ var grid = this.refs.grid;
         }
     },
 	render: function() {
-
+var products=this.props.products;
 		var displayProducts=this.props.match.params.cat? products.filter(elem=>elem.category==this.props.match.params.cat):products;
 		
 		return (

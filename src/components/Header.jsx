@@ -2,6 +2,7 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 import Cart from './Cart.jsx';
 import CartTable from './CartTable.jsx';
+import Search from './Search.jsx';
 import './Header.scss';
 
 
@@ -26,7 +27,7 @@ console.log("33");
 				<div className="container relat">
 					<div className="header">
 						<div className="header__logo">
-							
+							<Search></Search>
 						</div>
 						
 							<ul className="header-nav">
