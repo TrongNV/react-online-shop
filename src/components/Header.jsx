@@ -25,10 +25,12 @@ console.log("33");
 			<header >
 				<div className="container relat">
 					<div className="header">
-						<div className="header__logo">HEADER</div>
+						<div className="header__logo">
+							
+						</div>
 						
 							<ul className="header-nav">
-								<li><NavLink exact className="header-nav__link" to="/">MAIN</NavLink></li>
+								<li><NavLink exact className="header-nav__link" to="/">NEWS</NavLink></li>
 								<li><NavLink className="header-nav__link" to="/products">PRODUCTS</NavLink></li>
 								<li><NavLink className="header-nav__link" to="/about">ABOUT</NavLink></li>
 							<Cart  showCartClick={this.showCart}  total={this.props.total}></Cart>

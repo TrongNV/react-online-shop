@@ -16,6 +16,9 @@ header{
 	flex-wrap:wrap;
 	&__logo{
 		flex-grow:2;
+		img{
+			height: 60px;
+		}
 	}
 }
 
