@@ -29,8 +29,8 @@ console.log("33");
 				<div className="container relat">
 					<div className="header">
 						<div className="header__logo">
-						{(currentLocation.includes('/products') && !currentLocation.includes('/products/product'))?(<Search onSearch={this.props.handleSearch}></Search>):null
-						}
+						{(currentLocation.includes('/products') && !currentLocation.includes('/products/product'))?
+						(<Search onSearch={this.props.handleSearch}></Search>):null}
 						</div>
 						
 							<ul className="header-nav">
@@ -60,3 +60,5 @@ console.log("33");
 });
 
 export default Header;
+
+

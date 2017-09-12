@@ -6,6 +6,7 @@ $pink:#E08283;
 .category-component_nav{
 	//background: green;
 	display: flex;
+	flex-wrap:wrap;
 	list-style:none;
 	padding: 0;
 	margin-bottom: 50px;
