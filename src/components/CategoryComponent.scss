@@ -1,0 +1,31 @@
+$pink:#E08283;
+.category-component{
+	//background: orange;
+}
+
+.category-component_nav{
+	//background: green;
+	display: flex;
+	list-style:none;
+	padding: 0;
+	margin-bottom: 50px;
+	li{
+		//background: blue;
+		margin-right: 10px;
+	}
+	a{
+		padding: 15px 25px;
+		display: inline-block;
+		font-weight: 900;
+		color:grey;
+		border-bottom: 5px solid $pink;
+		&:hover{
+			text-decoration: none;
+			color:$pink;
+			//background: #f1f1f1;
+		}
+	}
+	.active{
+		color:$pink;text-decoration: none;
+	}
+}

@@ -9,9 +9,9 @@ var Content = React.createClass({
 		return (
 			<main>
 				<div className="container" >
-					<div className="row" >
+				
 						{this.props.children}
-					</div>
+					
 				</div>
 			</main>
 			

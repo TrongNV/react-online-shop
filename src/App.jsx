@@ -9,7 +9,7 @@ import Home from './pages/Home.jsx';
 import Products from './pages/Products.jsx';
 import Product from './pages/Product.jsx';
 import NotFound from './pages/NotFound.jsx';
-
+import CategoryComponent from './components/CategoryComponent.jsx'
 import './App.scss';
 
 var App = React.createClass({
@@ -100,13 +100,17 @@ if (!dublicate) {
 					>
 						
 					</Header>
+					
 					<Content>
+					<Route  exact path="/products/:cat?" component={CategoryComponent} />
 						<Switch>
 							
 							<Route exact path="/" component={Home} />
-							<Route exact path="/products" render={props=><Products OnHandleBuy={this.handleBuy}/> } />
-							<Route path="/products/product/:id" render={props=><Product OnHandleBuy={this.handleBuy} {...props}/> } />
 							<Route path="/about" component={About}  />
+							<Route exact path="/products/:cat?" render={props=><Products OnHandleBuy={this.handleBuy} {...props}/> } />
+							<Route  path="/products/product/:id"  render={props=><Product OnHandleBuy={this.handleBuy} {...props}/> } />
+							
+							
 							<Route  component={NotFound}  />
 						 </Switch>
 					</Content>
