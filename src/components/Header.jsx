@@ -27,7 +27,7 @@ console.log("33");
 				<div className="container relat">
 					<div className="header">
 						<div className="header__logo">
-							<Search></Search>
+							<Search onSearch={this.props.handleSearch}></Search>
 						</div>
 						
 							<ul className="header-nav">

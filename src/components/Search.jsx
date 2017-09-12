@@ -9,7 +9,7 @@ var Search = React.createClass({
 			<div className="search">
 
 				<i className="lnr lnr-magnifier" ></i>
-				<input type="text"  placeholder="Search..."/>
+				<input type="text" onChange={this.props.onSearch}  placeholder="Search..."/>
 				
 			</div>
 		);
